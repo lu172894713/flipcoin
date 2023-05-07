@@ -1,0 +1,23 @@
+#coin {
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+    cursor: pointer;
+    user-select: none;
+    margin: 20px auto;
+    transform-style: preserve-3d;
+    transition-timing-function: ease-out;
+}
+
+#heads, #tails {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#tails {
+    transform: rotateY(180deg);
+}
